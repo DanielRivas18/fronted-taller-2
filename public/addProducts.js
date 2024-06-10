@@ -8,7 +8,7 @@ document.getElementById('miFormulario').addEventListener('submit', function (eve
     const fecha_vencimiento = document.getElementById('fecha_vencimiento').value || null;
     const precio = document.getElementById('precio').value;
 
-    // Crea el objeto JSON sin incluir el campo id
+   
     const datos = {
         nombre: nombre,
         inventario: inventario,
