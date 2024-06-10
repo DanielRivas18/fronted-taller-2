@@ -38,9 +38,9 @@ loadData()
             const colEstado = document.createElement('td');
             colEstado.appendChild(document.createTextNode(prj.estado_actual));
             if (prj.estado_actual === 'Vencido') {
-                colEstado.classList.add('text-danger'); 
+                colEstado.classList.add('text-danger');
             } else {
-                colEstado.classList.add('text-success'); 
+                colEstado.classList.add('text-success');
             }
             row.appendChild(colEstado);
 

@@ -18,7 +18,7 @@
             </div>
         </nav>
     </header>
-    
+
     <form id="miFormulario" class="container mt-5">
         <div class="formulario__title text-center mb-4">DATOS DEL NUEVO PRODUCTO</div>
         <div class="form-group mb-3">
@@ -26,11 +26,13 @@
         </div>
         <div class="form-group mb-3">
             <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" required name="nombre" id="nombre" placeholder="Nombre del producto">
+            <input type="text" class="form-control" required name="nombre" id="nombre"
+                placeholder="Nombre del producto">
         </div>
         <div class="form-group mb-3">
             <label for="inventario">Inventario:</label>
-            <input type="number" class="form-control" required name="inventario" id="inventario" placeholder="Inventario del producto">
+            <input type="number" class="form-control" required name="inventario" id="inventario"
+                placeholder="Inventario del producto">
         </div>
         <div class="form-group mb-3">
             <label for="tipo_producto">Tipo de Producto:</label>
@@ -43,17 +45,19 @@
         </div>
         <div class="form-group mb-3">
             <label for="fecha_vencimiento">Fecha de Vencimiento:</label>
-            <input type="date" class="form-control" name="fecha_vencimiento" id="fecha_vencimiento" placeholder="Fecha de vencimiento del producto">
+            <input type="date" class="form-control" name="fecha_vencimiento" id="fecha_vencimiento"
+                placeholder="Fecha de vencimiento del producto">
         </div>
         <div class="form-group mb-3">
             <label for="precio">Precio:</label>
-            <input type="number" class="form-control" required name="precio" id="precio" placeholder="Precio del producto">
+            <input type="number" class="form-control" required name="precio" id="precio"
+                placeholder="Precio del producto">
         </div>
         <div class="form-group mb-3">
-            <input type="hidden" class="form-control" required name="estado_actual" id="estado_actual" value="no vencido">
+            <input type="hidden" class="form-control" required name="estado_actual" id="estado_actual">
         </div>
         <div class="form-group mb-3">
-            <input type="hidden" class="form-control" required name="fecha_ingreso" id="fecha_ingreso" value="<%= new Date() %>">
+            <input type="hidden" class="form-control" required name="fecha_ingreso" id="fecha_ingreso">
         </div>
         <div class="d-flex justify-content-between">
             <button type="submit" class="btn btn-primary">Agregar</button>

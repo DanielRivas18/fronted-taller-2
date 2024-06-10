@@ -1,4 +1,4 @@
-document.getElementById('miFormulario').addEventListener('submit', function(event) {
+document.getElementById('miFormulario').addEventListener('submit', function (event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
 
     // Recoge los datos del formulario
@@ -25,13 +25,13 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
         },
         body: JSON.stringify(datos)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Éxito:', data);
-        alert('Producto enviado con éxito');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('Error al enviar el producto');
-    });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Éxito:', data);
+            alert('Producto enviado con éxito');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Error al enviar el producto');
+        });
 });
