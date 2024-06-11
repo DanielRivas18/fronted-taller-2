@@ -1,3 +1,3 @@
 ## LINK DESPLIEGUE FRONTED
 
-https://fronted-taller-2-danielrivas18s-projects.vercel.app/
+https://fronted-taller-2-hxzc.vercel.app/
