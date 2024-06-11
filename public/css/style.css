@@ -104,3 +104,13 @@ label{
     border-radius: 5px;
     text-align: center;
 }
+
+.sugerencias {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.sugerencias .list-group-item {
+    cursor: pointer;
+}
