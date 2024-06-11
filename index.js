@@ -16,4 +16,4 @@ app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
 
-app.use(express.static('./public'))
+app.use(express.static(path.join(__dirname, 'public')));
