@@ -11,10 +11,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-// Ruta para la página 'listado.html'
-app.get('/listado.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'listado.html'));
-});
+
 
 // Escuchar en el puerto especificado
 app.listen(port, () => {
