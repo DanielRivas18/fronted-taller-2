@@ -1,4 +1,4 @@
-document.getElementById('ventaFormulario').addEventListener('submit', async function(event) {
+document.getElementById('ventaFormulario').addEventListener('submit', async function (event) {
     event.preventDefault();
 
     const nombre = document.getElementById('nombre').value;

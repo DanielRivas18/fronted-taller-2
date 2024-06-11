@@ -8,7 +8,7 @@ document.getElementById('miFormulario').addEventListener('submit', function (eve
     const fecha_vencimiento = document.getElementById('fecha_vencimiento').value || null;
     const precio = document.getElementById('precio').value;
 
-   
+
     const datos = {
         nombre: nombre,
         inventario: inventario,

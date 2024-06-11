@@ -19,10 +19,6 @@ loadData()
         data.data.forEach(prj => {
             const row = document.createElement('tr')
 
-            const colId = document.createElement('td')
-            colId.appendChild(document.createTextNode(prj.id))
-            row.appendChild(colId)
-
             const colNombre = document.createElement('td')
             colNombre.appendChild(document.createTextNode(prj.nombre))
             row.appendChild(colNombre)
@@ -35,22 +31,7 @@ loadData()
             colPrecio.appendChild(document.createTextNode(prj.precio))
             row.appendChild(colPrecio)
 
-            const colTipo = document.createElement('td')
-            colTipo.appendChild(document.createTextNode(prj.tipo_producto))
-            row.appendChild(colTipo)
 
-            const colEstado = document.createElement('td');
-            colEstado.appendChild(document.createTextNode(prj.estado_actual));
-            if (prj.estado_actual === 'Vencido') {
-                colEstado.classList.add('text-danger');
-            } else {
-                colEstado.classList.add('text-success');
-            }
-            row.appendChild(colEstado);
-
-            const colIngreso = document.createElement('td')
-            colIngreso.appendChild(document.createTextNode(prj.fecha_vencimiento))
-            row.appendChild(colIngreso)
 
             tBody.appendChild(row);
         });
